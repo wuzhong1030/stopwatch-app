@@ -1,0 +1,22 @@
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.button {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    outline: none;
+}
+
+.left-button {
+    border: 1px solid red;
+}
+
+.right-button {
+    margin-left: 20px;
+    border: 1px solid green;
+}

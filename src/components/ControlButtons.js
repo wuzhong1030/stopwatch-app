@@ -1,19 +1,27 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 const ControlButtons = props => {
   const { activated, onStart, onPause, onReset, onSplit } = props;
   if (activated) {
     return (
-      <div>
-        <button onClick={onSplit}>计次</button>
-        <button onClick={onPause}>停止</button>
-      </div>
+      <Fragment>
+        <button onClick={onSplit} className="left-button button">
+          计次
+        </button>
+        <button onClick={onPause} className="right-button button">
+          停止
+        </button>
+      </Fragment>
     );
   } else {
     return (
       <div>
-        <button onClick={onReset}>复位</button>
-        <button onClick={onStart}>启动</button>
+        <button onClick={onReset} className="left-button button">
+          复位
+        </button>
+        <button onClick={onStart} className="right-button button">
+          启动
+        </button>
       </div>
     );
   }
